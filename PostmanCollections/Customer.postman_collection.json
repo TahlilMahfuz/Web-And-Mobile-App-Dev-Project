@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "d1a7b20f-f2fe-4281-ba3c-044b48540ac9",
+		"name": "Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31015567"
+	},
+	"item": [
+		{
+			"name": "CustomerLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "difif56553@vreaa.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/user/userlogin",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePhone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/user/updatephonenumber/017888888888",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"updatephonenumber",
+						"017888888888"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteComment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/user/deletecomment/1",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"deletecomment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFirstName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/user/updatefirstname/Mahfuz",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"updatefirstname",
+						"Mahfuz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateLastName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/user/updatelastname/Faiyaz",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"updatelastname",
+						"Faiyaz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/S:/SWE_STUDIES/Admission Necessities/300x300.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/user/uploadProfileImage",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"uploadProfileImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadMultipleImages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "images",
+							"type": "file",
+							"src": [
+								"/S:/SWE_STUDIES/Admission Necessities/300x300.jpg",
+								"/S:/SWE_STUDIES/Admission Necessities/540x720.jpg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/user/uploadMultipleProfileImages",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"uploadMultipleProfileImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadAudioReview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "audio",
+							"type": "file",
+							"src": "/C:/Users/TahlilMahfuz/Downloads/file_example_MP3_700KB.mp3"
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/user/uploadVoiceReview/2",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"uploadVoiceReview",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadMultipleAudio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "audios",
+							"type": "file",
+							"src": [
+								"/C:/Users/TahlilMahfuz/Downloads/_Tere Mast Mast Do Nain_ ( With Lyrics) Full Song Dabangg _ Salman Khan.mp3",
+								"/C:/Users/TahlilMahfuz/Downloads/file_example_MP3_700KB.mp3"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/user/uploadMultipleVoiceReview/1",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"uploadMultipleVoiceReview",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePhoto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/user/deletephoto/2",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"deletephoto",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAudio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/user/deleteaudio/2",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"deleteaudio",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "difif56553@vreaa.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/userlogout",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userlogout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

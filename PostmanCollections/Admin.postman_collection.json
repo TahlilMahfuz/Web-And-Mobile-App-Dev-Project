@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "e4ca7fed-2b9a-4fc7-ad66-eb2313f09997",
+		"name": "Admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31015567"
+	},
+	"item": [
+		{
+			"name": "adminLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "adminemail",
+							"value": "kenadew512@usoplay.com",
+							"type": "text"
+						},
+						{
+							"key": "adminpassword",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/admin/adminlogin",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"adminlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "adminemail",
+							"value": "kenadew512@usoplay.com",
+							"type": "text"
+						},
+						{
+							"key": "adminpassword",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Localhost:3000/userlogout",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userlogout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBranch",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/deletebranch/4",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"deletebranch",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOrder",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/deleteorderbyid/2",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"deleteorderbyid",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePizza",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/deletepizza/4",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"deletepizza",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTopping",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/deletetopping/4",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"deletetopping",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOrderType",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/deleteordertype/3",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"deleteordertype",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_branch",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/putbranch/Khulna",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"putbranch",
+						"Khulna"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_branch",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatebranch/3/Banani",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatebranch",
+						"3",
+						"Banani"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePizzaPrice",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatepizzaprice/1/1000",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatepizzaprice",
+						"1",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePizzaDetails",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatepizzadetails/1/Sundor Masala Thakbe",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatepizzadetails",
+						"1",
+						"Sundor Masala Thakbe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePizzaName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatepizzaname/1/DomMasala",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatepizzaname",
+						"1",
+						"DomMasala"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateToppingName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatetoppingname/1/DomMustard",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatetoppingname",
+						"1",
+						"DomMustard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateToppingDetails",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatetoppingdetails/1/Valo Mastard dwa thakbe",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatetoppingdetails",
+						"1",
+						"Valo Mastard dwa thakbe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateToppingPrice",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "Localhost:3000/admin/updatetoppingprice/1/20",
+					"host": [
+						"Localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"updatetoppingprice",
+						"1",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
